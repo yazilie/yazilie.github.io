@@ -1,0 +1,101 @@
+:root {
+    --background-color: #11111b;
+    --text-color: #cdd6f4;
+    --subtext-color: #bac2de;
+}
+
+@font-face {
+    font-family: Minecraftia;
+    src: url(minecraftia.ttf);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-family: Minecraftia, sans-serif;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.username {
+    background: linear-gradient(90deg, #FF76C1, #FFFFFF);
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+}
+
+hr {
+    width: 60%;
+    margin-bottom: 50px;
+    color: #313244;
+}
+
+.donation {
+    text-align: center;
+}
+
+.donation > * {
+    font-family: Minecraftia, serif;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #313244;
+    color: var(--text-color);
+}
+
+.donation > .copy {
+    user-select: none;
+}
+
+.donation > .copy:hover {
+    cursor: pointer;
+}
+
+.donation > label {
+    user-select: none;
+}
+
+#btc > .copy {
+    background-color: #f5c2e7;
+    color: var(--background-color);
+    transition: background-color .2s;
+}
+
+#btc > .copy:hover {
+    background-color: #cba6f7;
+}
+
+#btc > .copy:active {
+    background-color: #a6e3a1;
+    transition: none;
+}
+
+#btc > .label {
+    background-color: #fab387;
+    color: var(--background-color);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #181825;
+    padding: 10px;
+}
+
+#copyright, #contact {
+    font-family: Minecraftia, sans-serif;
+    color: var(--subtext-color);
+}
+
+#contact > a {
+    text-decoration: none;
+    color: #6c7086;
+}
+
+#contact > a:hover {
+    color: #89b4fa;
+}

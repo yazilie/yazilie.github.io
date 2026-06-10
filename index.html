@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate to yazilie</title>
+    <link rel="stylesheet" href="catppuccin-mocha.css">
+    <script>
+        function copy(id) {
+            let address = document.getElementById(id).textContent;
+            navigator.clipboard.writeText(address);
+        }
+    </script>
+</head>
+  <body>
+  <h1>Donate to <span class="username">yazilie</span></h1>
+  <hr>
+  <div id="donation-links">
+      <div class="donation" id="btc">
+          <label class="label">BTC</label>
+          <span class="value">bc1qawv7waqe3qqzdleem3d3n44v7ggxprt3jc5ahe</span>
+          <span onclick="copy('btc-address')" class="copy">copy</span>
+      </div>
+  </div>
+  
+  <div id="footer">
+      <div id="contact">
+          <label>Contact</label>
+          <a href="https://discord.gg/DpmCSrYN3C">Discord</a>
+          <a href="mailto:yazilie@yazilie.com">Email</a>
+      </div>
+      <span id="copyright">© 2026 donate.yazilie.com - All Rights Reserved.</span>
+  </div>
+  </body>
+</html>
